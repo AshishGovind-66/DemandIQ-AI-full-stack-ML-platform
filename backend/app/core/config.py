@@ -22,8 +22,15 @@ class Settings:
     PORT: int = int(os.getenv("BACKEND_PORT", 8000))
     
     # CORS
-    _cors_str: str = os.getenv("CORS_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000")
-    CORS_ORIGINS: List[str] = [origin.strip() for origin in _cors_str.split(",") if origin.strip()]
+    _cors_str: str = os.getenv(
+    "CORS_ORIGINS",
+    "http://localhost:3000,http://127.0.0.1:3000,https://demand-iq-ai-full-stack-ml-platform.vercel.app"
+    )
+    CORS_ORIGINS: List[str] = [
+    origin.strip().rstrip("/")
+    for origin in _cors_str.split(",")
+    if origin.strip()
+]
     
     # Database: Default fallback is SQLite for instant zero-dependency local dev
     DATABASE_URL: str = os.getenv("DATABASE_URL", f"sqlite:///{PROJECT_ROOT / 'demandiq.db'}")
