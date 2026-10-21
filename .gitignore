@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Virtual environments (just in case)
+venv/
+.venv/
+env/
+ENV/
+
+# Node & Next.js
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment variables & secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Databases & local storage
+*.db
+*.sqlite
+*.sqlite3
+demandiq.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Large raw datasets (Walmart M5 files are ~500MB, keep out of git)
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.parquet
+m5-forecasting-accuracy/*.csv
+!data/sample/*.csv
+
+# Trained model artifacts (keep dir via .gitkeep)
+models/*.joblib
+models/*.pkl
+!models/.gitkeep
+
+# Reports generated outputs (keep dir via .gitkeep)
+reports/generated/
+!reports/.gitkeep
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+

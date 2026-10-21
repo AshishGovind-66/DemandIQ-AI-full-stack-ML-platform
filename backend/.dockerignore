@@ -1,0 +1,17 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.coverage
+htmlcov
+.git
+.gitignore
+.env
+*.db
+*.sqlite
+data/raw/*.csv
+m5-forecasting-accuracy
+models/*.joblib
+!data/sample/*.csv
+

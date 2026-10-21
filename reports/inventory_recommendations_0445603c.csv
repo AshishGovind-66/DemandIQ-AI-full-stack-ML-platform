@@ -1,0 +1,11 @@
+product_id,store_id,category,unit_price,daily_demand_mean,daily_demand_std,lead_time_days,service_level,z_score,expected_lead_time_demand,safety_stock,reorder_point,current_on_hand,on_order,inventory_position,target_stock,suggested_order_qty,stockout_risk,excess_stock_risk,days_of_supply_remaining,estimated_holding_cost
+PROD_001,STORE_A,Beverages,2.46,29.48,7.95,7,0.95,1.6449,206.4,34.6,241.0,20.0,0.0,20.0,461.7,442,True,False,0.7,125.66
+PROD_002,STORE_A,Snacks,3.66,22.57,6.4,7,0.95,1.6449,158.0,27.9,185.8,20.0,0.0,20.0,355.4,336,True,False,0.9,143.5
+PROD_003,STORE_A,Dairy,4.1,36.52,9.25,7,0.95,1.6449,255.6,40.2,295.9,20.0,0.0,20.0,568.2,549,True,False,0.5,258.24
+PROD_004,STORE_A,Bakery,1.77,42.77,11.43,7,0.95,1.6449,299.4,49.7,349.2,20.0,0.0,20.0,669.2,650,True,False,0.5,132.45
+PROD_005,STORE_A,Produce,4.89,27.08,7.9,7,0.95,1.6449,189.6,34.4,223.9,20.0,0.0,20.0,427.8,408,True,False,0.7,233.23
+PROD_001,STORE_B,Beverages,2.44,22.82,6.1,7,0.95,1.6449,159.8,26.6,186.3,20.0,0.0,20.0,357.1,338,True,False,0.9,95.4
+PROD_002,STORE_B,Snacks,3.64,17.71,5.49,7,0.95,1.6449,124.0,23.9,147.9,20.0,0.0,20.0,281.7,262,True,False,1.1,112.92
+PROD_003,STORE_B,Dairy,4.11,27.72,7.54,7,0.95,1.6449,194.0,32.8,226.9,20.0,0.0,20.0,434.5,415,True,False,0.7,197.36
+PROD_004,STORE_B,Bakery,1.75,33.81,9.33,7,0.95,1.6449,236.7,40.6,277.3,20.0,0.0,20.0,530.8,511,True,False,0.6,103.6
+PROD_005,STORE_B,Produce,4.88,20.74,6.45,7,0.95,1.6449,145.2,28.1,173.3,20.0,0.0,20.0,330.1,311,True,False,1.0,179.32
